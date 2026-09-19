@@ -1,0 +1,9 @@
+{
+  "name": "expert-calls",
+  "version": "1.0.0",
+  "description": "Process expert-call transcripts into house-style summaries, an evidence ledger, competing-claim registry, compact case maps, and provenance-aware answers",
+  "author": {
+    "name": "Project Brain"
+  },
+  "homepage": "https://code.claude.com/docs/en/plugins"
+}

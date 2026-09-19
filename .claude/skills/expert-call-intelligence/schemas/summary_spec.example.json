@@ -1,0 +1,30 @@
+{
+  "schema_version": "1.0",
+  "call_id": "EC-0001",
+  "source_file": "Example Expert Call.docx",
+  "source_sha256": "<64-character SHA-256 copied from extraction metadata>",
+  "interviews": [
+    {
+      "title": "Interview — Procurement Director, Example OEM",
+      "framing": [
+        "Stakeholder type: OEM-side sourcing insider",
+        "Focus: Supplier qualification, capacity, and sourcing allocation",
+        "Note: The expert had direct visibility into compressor-side sourcing but limited visibility into hot-section casting"
+      ],
+      "themes": [
+        {
+          "lead": "Qualification is staged rather than binary",
+          "points": [
+            "The expert estimates that first-part approval takes 12–18 months for an experienced supplier, while full production maturity can take several years once repeat performance and reference history are included."
+          ]
+        },
+        {
+          "lead": "Capacity commitments influence sourcing allocation",
+          "points": [
+            "He was direct that vendors willing to reserve qualified capacity receive incremental share even when they are not the absolute lowest-cost option."
+          ]
+        }
+      ]
+    }
+  ]
+}

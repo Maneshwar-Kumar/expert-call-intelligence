@@ -1,0 +1,10 @@
+{
+  "schema_version": "1.0",
+  "tool_version": "1.0.0",
+  "raw_input_rule": "Process root-level .docx files only; never modify source transcripts",
+  "output_root": "_Expert_Call_System",
+  "master_filename": "Expert_Call_Notes_Master.docx",
+  "call_id_prefix": "EC",
+  "process_root_only": true,
+  "max_compile_job_items": 120
+}

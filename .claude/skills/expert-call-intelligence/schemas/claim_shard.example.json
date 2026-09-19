@@ -1,0 +1,37 @@
+{
+  "schema_version": "1.0",
+  "job_id": "JOB-EXAMPLE000001",
+  "input_hash": "<copy exactly from compile job>",
+  "group": {
+    "module": "supplier",
+    "topic": "qualification-timeline",
+    "primary_entity": "example-supplier"
+  },
+  "claims": [
+    {
+      "claim_key": "first-part-qualification-takes-12-to-18-months",
+      "normalized_claim": "First-part qualification for an experienced compressor-airfoil supplier takes approximately 12–18 months",
+      "synthesis": "The available direct-role evidence supports a 12–18 month first-part timeline, but it should not be confused with full serial-production maturity, which can take materially longer",
+      "status": "single-source",
+      "confidence": "medium",
+      "primary_entities": [
+        "example-supplier",
+        "example-oem"
+      ],
+      "scope": {
+        "product": "compressor airfoils",
+        "milestone": "first-part approval",
+        "supplier_type": "experienced"
+      },
+      "supporting_evidence": [
+        "EC-0001-E001"
+      ],
+      "contradicting_evidence": [],
+      "qualifying_evidence": [],
+      "open_questions": [
+        "Define the OEM's full-maturity milestone"
+      ]
+    }
+  ],
+  "unclustered_evidence": []
+}

@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "call_id": "EC-0001",
+  "source_file": "Example Expert Call.docx",
+  "source_sha256": "<64-character SHA-256 copied from extraction metadata>",
+  "interview_title": "Interview — Procurement Director, Example OEM",
+  "interviewee": {
+    "name": "",
+    "role": "Procurement Director",
+    "company": "Example OEM"
+  },
+  "stakeholder_type": "OEM-side sourcing insider",
+  "focus": "Supplier qualification, capacity, and sourcing allocation",
+  "scope_notes": [
+    "Direct visibility into compressor-side sourcing; limited hot-section visibility"
+  ],
+  "entities": [
+    {
+      "canonical_name": "example-oem",
+      "display_name": "Example OEM",
+      "entity_type": "company",
+      "roles": [
+        "customer",
+        "OEM"
+      ],
+      "aliases": []
+    },
+    {
+      "canonical_name": "example-supplier",
+      "display_name": "Example Supplier",
+      "entity_type": "company",
+      "roles": [
+        "supplier"
+      ],
+      "aliases": []
+    }
+  ],
+  "evidence": [
+    {
+      "evidence_id": "EC-0001-E001",
+      "assertion": "First-part qualification for an experienced compressor-airfoil supplier typically takes 12–18 months, while full supplier maturity takes longer",
+      "subject": "Example Supplier",
+      "predicate": "has-qualification-timeline",
+      "object": "12–18 months to first part; several years to maturity",
+      "modules": [
+        "supplier"
+      ],
+      "topic": "qualification-timeline",
+      "statement_type": "estimate",
+      "basis": "direct-role",
+      "confidence": "medium",
+      "time_scope": {
+        "reference": "current"
+      },
+      "geography": [],
+      "product_scope": [
+        "compressor airfoils"
+      ],
+      "customer_scope": [
+        "Example OEM"
+      ],
+      "scenario": "experienced supplier",
+      "metric": {
+        "name": "first-part qualification time",
+        "range_low": 12,
+        "range_high": 18,
+        "unit": "months",
+        "denominator": "one experienced supplier",
+        "period": "current"
+      },
+      "source_anchors": [
+        "P0012-P0015"
+      ],
+      "caveats": [
+        "Full maturity was not defined as a single formal milestone"
+      ],
+      "keywords": [
+        "supplier onboarding",
+        "first part",
+        "serial production",
+        "qualification"
+      ]
+    }
+  ],
+  "relationships": [
+    {
+      "from": "example-supplier",
+      "type": "qualified-for",
+      "to": "example-oem",
+      "scope": {
+        "product": "compressor airfoils"
+      },
+      "evidence_ids": [
+        "EC-0001-E001"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "open_questions": [
+    {
+      "question": "What milestone defines full supplier maturity for this OEM?",
+      "why_it_matters": "It reconciles short first-part estimates with multi-year supplier-development claims",
+      "priority": "high",
+      "related_evidence_ids": [
+        "EC-0001-E001"
+      ]
+    }
+  ],
+  "keywords": [
+    "supplier qualification",
+    "capacity",
+    "sourcing"
+  ]
+}
