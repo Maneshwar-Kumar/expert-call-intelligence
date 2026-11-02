@@ -14,9 +14,9 @@ This package turns a SharePoint-synced case folder containing one raw expert-cal
 
 1. Open the SharePoint case folder in File Explorer through OneDrive/SharePoint sync
 2. Unzip this package **directly into that folder**, not into a new wrapper folder
-3. Confirm you can see `README_FIRST.md`, `CLAUDE.md`, `.claude`, and `_Expert_Call_System`
+3. Confirm you can see `README_FIRST.md`, `CLAUDE.md`, `.claude`, `launchers`, and `_Expert_Call_System`
 4. Put one raw transcript `.docx` per call in the root of the folder
-5. Start Claude Code from the root by double-clicking `START_CLAUDE_CODE.cmd`, or open a terminal in the folder and run `claude`
+5. Start Claude Code from the root by double-clicking `launchers/START_CLAUDE_CODE.cmd`, or open a terminal in the folder and run `claude`
 6. Accept workspace trust on the first launch
 
 ## Nightly operation

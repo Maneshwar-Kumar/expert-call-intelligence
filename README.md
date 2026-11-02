@@ -70,7 +70,7 @@ Every claim in every one of those files carries a `[P####]` anchor pointing back
 2. Unzip this package **directly into that folder** (not into a new wrapper folder).
 3. Confirm you can see `README_FIRST.md`, `CLAUDE.md`, `.claude/`, and `_Expert_Call_System/`.
 4. Drop one raw transcript `.docx` per expert call into the root of the folder.
-5. Launch Claude Code from that root (`START_CLAUDE_CODE.cmd` / `.ps1` / `.sh`, or just `claude`).
+5. Launch Claude Code from that root (`launchers/START_CLAUDE_CODE.cmd` / `.ps1` / `.sh`, or just `claude`).
 6. Accept workspace trust on first launch.
 
 ### Commands
@@ -102,7 +102,7 @@ Example queries:
 .
 ├── CLAUDE.md                          operating rules for the case folder
 ├── README_FIRST.md                    install steps (copied into the case folder)
-├── START_CLAUDE_CODE.{cmd,ps1,sh}      one-click launchers
+├── launchers/START_CLAUDE_CODE.{cmd,ps1,sh}  one-click launchers (start Claude Code in the parent folder)
 ├── _Expert_Call_System/                output tree (starts empty, fills up as you process calls)
 └── .claude/skills/expert-call-intelligence/
     ├── agents/                        call-summarizer, case-analyst, claim-compiler

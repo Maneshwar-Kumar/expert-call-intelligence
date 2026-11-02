@@ -1,4 +1,4 @@
-Set-Location $PSScriptRoot
+Set-Location (Split-Path $PSScriptRoot -Parent)
 if (-not (Get-Command claude -ErrorAction SilentlyContinue)) {
     Write-Error "Claude Code was not found on PATH"
     exit 1

@@ -1,6 +1,6 @@
 @echo off
 setlocal
-cd /d "%~dp0"
+cd /d "%~dp0.."
 where claude >nul 2>nul
 if errorlevel 1 (
   echo Claude Code was not found on PATH
